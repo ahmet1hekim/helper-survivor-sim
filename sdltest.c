@@ -1,15 +1,4 @@
-/*
-compiling:
-for macos:
-copy SDL2.frameworks into Library/Frameworks
 
-then
-gcc sdltest.c -F/Library/Frameworks -framework SDL2
-
-for linux:
-sudo apt-get install libsdl2-dev
-gcc sdltest.c -lSDL2
-*/
 #include "SDL2/SDL.h"
 
 #define DELAY 3000
@@ -20,11 +9,7 @@ int main(int argc, char **argv) {
     /* Initialises data */
     SDL_Window *window = NULL;
 
-    /*
-     * Initialises the SDL video subsystem (as well as the events subsystem).
-     * Returns 0 on success or a negative error code on failure using
-     * SDL_GetError().
-     */
+   
     if (SDL_Init(SDL_INIT_VIDEO) != 0) {
         fprintf(stderr, "SDL failed to initialise: %s\n", SDL_GetError());
         return 1;
