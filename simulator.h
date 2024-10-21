@@ -1,13 +1,4 @@
-/**
- * @file simulator.h
- * @author your name (you@domain.com)
- * @brief 
- * @version 0.1
- * @date 2024-04-21
- * 
- * @copyright Copyright (c) 2024
- * 
- */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -25,7 +16,7 @@ typedef struct coord {
 typedef struct survivor {
     int status;
     Coord coord;
-    struct tm discovery_time; /*you can use struct tm, too*/
+    struct tm discovery_time; 
     struct tm helped_time;
     char info[25];
 } Survivor;
